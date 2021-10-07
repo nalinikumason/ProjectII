@@ -5,7 +5,7 @@ pipeline {
         DOCKER_IMAGE_NAME = "bhavukm/train-schedule"
     }
     stages {
-        stage('Build') {
+        stage('Maven Build') {
             steps {
                 echo 'Running build automation'
                 sh './gradlew build --no-daemon'
